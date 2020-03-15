@@ -38,6 +38,8 @@ enum cat_status CAT_iter_write(int in_fd, int out_fd)
             goto l_cleanup;
         }
 
+        // read_retval equals to the numbers of bytes read if not failed, so when reading less than
+        // BUFSIZ bytes, only the number of bytes read will be written. When EOF is read, 0 bytes are read, and nothing will be written
         write_retval = write(out_fd, read_buf, read_retval);
         if (C_STANDARD_FAILURE_VALUE == write_retval)
         {

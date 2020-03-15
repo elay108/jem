@@ -11,6 +11,7 @@
 #endif
 
 #define DEBUG_STRING "%s:%d:%s(): "
+#define NEWLINE "\n"
 
 #define HEAPFREE(ptr) {\
     do {\
@@ -25,7 +26,7 @@
     do {\
         if (DDEBUG)\
         {\
-            fprintf(stderr, DEBUG_STRING fmt, __FILE__, __LINE__, __func__, __VA_ARGS__);\
+            fprintf(stderr, DEBUG_STRING fmt NEWLINE, __FILE__, __LINE__, __func__, __VA_ARGS__);\
         }\
     } while (0);\
 }
