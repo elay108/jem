@@ -11,7 +11,7 @@
 
 /*** Functions ***/
 /*
-    Description: Iterativley write a file using the heap
+    Description: Iterativley write from an fd to an fd
     Parameters:
         in_fd (int) - File descriptor to read from
         out_fd (int) - File descriptor to write to
