@@ -9,7 +9,7 @@
 
 /*** Functions ***/
 /*
-    Description: Output a file
+    Description: Output a file to stdout
     Parameters: 
         path (char) - A path to output
     Return Value: cat_status

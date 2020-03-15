@@ -13,8 +13,8 @@
 /*
     Description: Iterativley write a file using the heap
     Parameters:
-        in_fd (int) - File descriptor of file to read
-        out_fd (int) - File descriptor of file to write to
+        in_fd (int) - File descriptor to read from
+        out_fd (int) - File descriptor to write to
     Return Value: cat_status
 */
 enum cat_status CAT_iter_write(int in_fd, int out_fd);

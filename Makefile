@@ -2,7 +2,7 @@
 # Compiler Flags
 #
 CC	= gcc
-CFLAGS 	= -Wall
+CFLAGS 	= -Wall -Werror -Wextra
 
 #
 # Project Files
